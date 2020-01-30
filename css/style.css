@@ -10,11 +10,14 @@ Make sure to learn what the starter code does!!
 
 body{
   color: black;
-  font-family: sans-serif;
+  font-family: "Andika", sans-serif;
   font-size: 16px;
   margin: 1.2em;
+  background-image: url("../images/pigeon-background.JPEG");
+  background-repeat: no-repeat;
   background-size: cover ;
   background-position: center;
+  background-color: #DDDDDD;
 }
 
 main{
@@ -32,28 +35,59 @@ caption{
   margin:5px 0px;
 }
 
-p{}
+p{
+  color: black;
+  font-size: 16px;
+  padding-top: 10px;
+}
 
-a{}
+a{
+  color: #C12258;
+  font-size: 16px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
 
 table{
-    border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  border: 2px solid black;
 }
 
 .colhead{
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
   background-color: #7e0820;
   color: white;
 }
 
-.rowhead{}
+.rowhead{
+  border-top: 2px solid black;
+}
 
 td{
+  text-align: center;
+  border-top: 2px solid black;
   padding: 15px;
 }
 
-tr{}
+tr{
+}
+
+tr:nth-child(odd) {background: #D1D1D1}
+tr:nth-child(even) {background: transparent}
+
+tr:hover{
+  background-color: rgb(126,8,32);
+  opacity: 0.5;
+}
 
 *{}
+
+*:focus{
+  border: 2px solid black;
+}
 
 thead tr:first-child th:first-child{}
 
